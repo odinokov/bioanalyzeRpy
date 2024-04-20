@@ -1,2 +1,2 @@
 # bioanalyzeRpy
-Demo run of bioanalyzeR in Python
+Demo run of [bioanalyzeR](https://github.com/jwfoley/bioanalyzeR/) in Python.
