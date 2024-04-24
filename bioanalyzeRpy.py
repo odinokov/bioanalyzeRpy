@@ -56,7 +56,7 @@ def process_electrophoresis_data(filename, data_part):
     try:
         robjects.r(r_code)
         # Convert the specified part of the data to a pandas DataFrame using the new conversion method
-        data_part_df = rpy2py(robjects.r['data_part'])
+        data_part_df = pandas2ri.rpy2py(robjects.r['data_part'])
         return data_part_df
     except Exception as e:
         print("Error processing electrophoresis data:", e)
